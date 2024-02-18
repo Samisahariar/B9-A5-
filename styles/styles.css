@@ -1,0 +1,11 @@
+.ticektscontainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.classname{
+    font-weight: 600;
+}
+.price{
+    font-weight:600
+}

@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
     <style>
     .font-raleway{
     font-family: "Raleway", sans-serif;
@@ -192,8 +193,180 @@
             </div>
 
 
-            <div class="w-[80%] h-[100vh] bg-[#fff] rounded-2xl mx-auto flex mt-[5%]">
+<!-- heres the available  seats , you have to change the bg to green when the seat is occupied-->
 
+            <div class="w-[80%] h-[100vh] bg-[#fff] rounded-2xl mx-auto flex mt-[5%] gap-4">
+                <div class="h-full bg-white w-[60%] border-r-2 border-dashed">
+
+                    <div class="w-[98%] h-full bg-white mx-auto">
+                        <div class="w-full">
+                            <h3 class="font-semibold tes p-4">Select your Seat</h3>
+                        </div>
+                        <hr class="border-dashed">
+                        <div class="w-full p-4 flex justify-between">
+                            <span class="flex gap-1"><img src="images/seat-gray.png" alt=""> Available</span>
+                            <!-- 
+
+                    
+                             -->
+                            <span class="flex gap-1"><img src="images/seat-green-filled.png" alt="">Selected</span>
+                        </div>
+                        <hr class="border-dashed">
+                        <div class="w-full flex gap-8">
+                            <!-- its the seat container start -->
+                            <div class="bg-white h-[80vh] w-[45%]">
+                                <div class="flex gap-4 mt-4">
+                                    <!-- its the transparent area of seat -->
+                                    <div class="w-[25%] h-[7vh] bg-transparent flex justify-center items-center rounded-2xl">
+                                        
+                                    </div>
+                                    <div class="w-full h-[7vh] bg-transparent items-center justify-center flex rounded-2xl">
+                                        
+                                    </div>
+                                    <div class="rounded-2xl w-full h-[7vh] bg-transparent items-center justify-center flex">
+                                        
+                                    </div>
+                                    <!-- its the transparent area of the seats -->
+                                </div>
+                                <div class="flex gap-4 mt-4">
+                                    
+                                    <div class="w-[25%] h-[7vh] bg-transparen flex justify-center items-center rounded-2xl seat">
+                                        A
+                                    </div>
+                                    <div class="w-full h-[7vh] bg-[#C4C4C4] items-center justify-center flex rounded-2xl seat cursor-pointer">
+                                        A1
+                                    </div>
+                                    <div class="rounded-2xl w-full h-[7vh] bg-[#C4C4C4] items-center justify-center flex seat cursor-pointer">
+                                        A2
+                                    </div>
+                                    
+                                </div>
+                                <div class="flex gap-4 mt-4">
+                                    
+                                    <div class="w-[25%] h-[7vh] bg-transparen flex justify-center items-center rounded-2xl seat">
+                                        B
+                                    </div>
+                                    <div class="cursor-pointer w-full h-[7vh] bg-[#C4C4C4] items-center justify-center flex rounded-2xl seat">
+                                        B1
+                                    </div>
+                                    <div class=" cursor-pointer rounded-2xl w-full h-[7vh] bg-[#C4C4C4] items-center justify-center flex seat">
+                                        B2
+                                    </div>
+                                   
+                                </div>
+                            </div>
+
+                            <div class="bg-white h-[80vh] w-[45%]">
+                                <!-- right seat container start -->
+                                <div class="flex gap-4 mt-4">
+                                    <div class="w-full h-[7vh] bg-transparent items-center justify-center flex rounded-2xl">
+                                        
+                                    </div>
+                                    <div class="rounded-2xl w-full h-[7vh] bg-[#C4C4C4] items-center justify-center flex">
+                                        <img src="images/wheel.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="flex gap-4 mt-4">
+                                    <div class="cursor-pointer w-full h-[7vh] bg-[#C4C4C4] items-center justify-center flex rounded-2xl seat">
+                                        A3
+                                    </div>
+                                    <div class="cursor-pointer rounded-2xl w-full h-[7vh] bg-[#C4C4C4] items-center justify-center flex seat">
+                                        A4
+                                    </div>
+                                </div>
+                                <div class="flex gap-4 mt-4">
+                                    <div class="cursor-pointer w-full h-[7vh] bg-[#C4C4C4] items-center justify-center flex rounded-2xl seat">
+                                        B3
+                                    </div>
+                                    <div class="cursor-pointer rounded-2xl w-full h-[7vh] bg-[#C4C4C4] items-center justify-center flex seat">
+                                        B4
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+                <div class="h-full bg-white w-[40%]">
+                    <div class="border-b-2 border-dashed">
+                        <h3 class="text-xl font-semibold p-3 text-black">Select Your Seat</h3>
+                    </div>
+                    <div class="bg-[#F7F8F8] h-[40%] w-full mt-4 rounded-xl flex  flex-col mr-4">
+                        <div class="w-[90%] mx-auto">
+
+                            <!-- heres to add the tickets name and also the prize -->
+                            <div>
+                                <div class="flex justify-between">
+                                    <span class="flex text-black mr-">Seat <Span class="bg-green-500 text-white inline-block w-[20px] justify-center items-center rounded-xl flex" > 2</Span></span>
+                                    <span class="font-semibold text-black">Class</span>
+                                    <span class="font-semibold text-black">Price</span>
+                                </div>
+                                <hr class="border-b-2 border-dashed">
+    
+    
+                                <!-- its the seat number which is bought by the user in this section -->
+                                
+                                
+                                <div class="ticektscontainer">
+                                    <span>C2</span>
+                                    <span class="classname">Economy class</span>
+                                    <span class="price">550</span>
+                                </div>
+
+
+                                 <!-- heres to add the selled tickets -->
+                            </div>
+                            <hr class="border-dashed border-2">
+                            <div class="flex justify-between">
+                                <h3 class="mr-20">Total price</h3>
+                                <h3>BDT <span id="total-prize">3900 </span></h3>
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+
+                    <!--******** input section   ****** -->
+                    <div>
+                        <label class="form-control w-full">
+                            <div class="label">
+                              <span class="label-text">What is your name?</span>
+
+                            </div>
+                            <input type="text" placeholder="Type here" class="input input-bordered w-full" />
+                        </label>
+                        <label class="form-control w-full">
+                            <div class="label">
+                              <span class="label-text">What is your name?</span>
+
+                            </div>
+                            <input type="text" placeholder="Type here" class="input input-bordered w-full" />
+                        </label>
+                        <label class="form-control w-full">
+                            <div class="label">
+                              <span class="label-text">What is your name?</span>
+
+                            </div>
+                            <input type="text" placeholder="Type here" class="input input-bordered w-full" />
+                        </label>
+<!-- its the button here to send -->
+                        <button class="btn btn-primary w-full bg-green-600 text-white font-semibold mt-4">Next</button>
+
+                    </div>
+
+
+
+
+
+                </div>
 
 
             </div>
