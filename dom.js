@@ -129,7 +129,7 @@ nextbutton.addEventListener('click', function(){
     if(array.length === 11 && ticketsbooked.length > 0){
         const main = document.getElementById('main-section')
         const name = document.getElementById('name')
-        name.innerText = username.value
+        name.innerText = username.value.toUpperCase()
         main.classList.add('hidden')
         document.getElementById('after').classList.remove('hidden')
     }else{
