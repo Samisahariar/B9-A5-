@@ -14,14 +14,13 @@ for (let index = 0; index < seats.length; index++) {
                     seat.classList.remove('bg-[#C4C4C4]')
                     seat.classList.add('bg-[#1DD100]')
                     bookedticketaddingtolist(seat)
+
                     showingthebookedseatnumber(ticketsbooked)
-                    if(ticketsbooked.length == 4){
-                        const coupanbutton = document.querySelector('#offer-button')
-                        coupanbutton.removeAttribute('disabled')
-                    }
+
                 }else{
                     alert("You cannt buy not more than 4 tickets")
                 }
+
             }else{
                 seat.classList.remove('bg-[#1DD100]')
                 seat.classList.add('bg-[#C4C4C4]')
@@ -78,6 +77,13 @@ function removingelement(seat){
 function showingthebookedseatnumber(ticketsbooked){
     const numberstoshow = document.querySelector('#totalseat')
     numberstoshow.innerText = ticketsbooked.length
+    if(numberstoshow.innerText === "4"){
+        const coupanbutton = document.querySelector('#offer-button')
+        coupanbutton.removeAttribute('disabled')
+    }else{
+        const coupanbutton = document.querySelector('#offer-button')
+        coupanbutton.setAttribute('disabled', '')
+    }
     calculatingtotal(ticketsbooked.length)
     showingtheleftseat(40 - ticketsbooked.length)
 }
@@ -103,5 +109,12 @@ coupanbutton.addEventListener('click', function(){
         const total = parseInt(document.querySelector('#total-price').innerText)
         let grandtotal = total - (total * 0.2)
         grandtotalelement.innerText = grandtotal
+        document.querySelector('#inpu-section').classList.add('hidden')
+    }else if( coupanvalue === "COUPLE20"){
+        const total = parseInt(document.querySelector('#total-price').innerText)
+        let grandtotal = total - (total * 0.15)
+        grandtotalelement.innerText = grandtotal
+        document.querySelector('#inpu-section').classList.add('hidden')
     }
+
 })
