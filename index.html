@@ -51,23 +51,26 @@
                   </ul>
                 </div>
                 <div class="navbar-end">
-                  <a class="btn text-[#13D100]">Button<img src="images/bus-icon.png" alt=""></a>
+                  <a class="btn text-[#13D100]">Bus<img src="images/bus-icon.png" alt=""></a>
                 </div>
               </div>
         </nav>
     </header>
 
     <main>
-        <section class="w-[80%] h-[80vh] mx-auto">
-            <div class="bg-[url(images/banner.png)] w-full h-full bg-no-repeat bg-cover flex flex-col">
-                <div class="w-[80%] bg-transparent h-[40%] mx-auto pt-10">
-                    <h3 class="text-6xl text-white text-center font-semibold font-raleway ">End-to-End travel With</h3>
-                    <span class="flex justify-center font-raleway text-6xl text-[#1DD100] font-semibold mt-4">Safi Paribahan</span>
+        <section id="main-section" class="">
+            <div class="hero min-h-screen w-[90%] mx-auto" style="background-image: url(images/banner.png);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 text-6xl font-bold font-raleway text-nowrap flex justify-center">End-to-End travel with</h1>
+                    <span class="mb-5 text-6xl font-bold text-[#1DD100]">P Paribahan</span>
+                    <p class="mb-5 mt-6">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                    <a href="#buy-tickets"><button class="btn btn-primary bg-[#1DD100] border-0">Buy Tickets</button></a>
+                        
+                  </div>
                 </div>
-                <div class="text-white w-[70%] h-[20%] bg-transparent mx-auto text-center">
-                    <p class="text-center my-auto"> Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined </p>
-                    <a href="#buy-tickets"><button class="bg-[#1DD100] btn btn-primary text-black mt-4 font-extrabold">Buy Tickets</button></a>
-                </div>
+            </div>
                 <!-- <div class="w-[100%] h-[90vh] flex gap-3 absolute top-[500px] mx-auto">
                     <div class="w-[20%] bg-white h-[full] rounded-xl flex justify-center items-center gap-10 shadow-xl border-4 border-solid border-b-green-500">
                         <img src="images/people.png" alt="" class="w-[48px] h-[48px]">
@@ -91,8 +94,6 @@
                         </div>
                     </div>
                 </div> -->
-            </div>
-        </section>
 
         <section class="mt-[10%]">
             <h3 class="font-semibold text-5xl text-black font-raleway text-center">Best offers for you </h3>
@@ -124,7 +125,7 @@
             </div>
         </section>
         <div class="w-full text-center mt-[5%]">
-            <button class="btn bg-green-50 border-4 border-solid border-green-500 text-green-500 ">See all offers</button>
+            <button class="btn bg-[#1DD100] border-0 text-white btn-primary">See all offers</button>
         </div>
         <section class="w-full border-t-2 border-t-green-400 rounded-[100px] mt-[10%] bg-[#F7F8F8]" id="buy-tickets">
             <div>
@@ -448,7 +449,7 @@
                             <div class="sami" id="inpu-section">
                                 <label class="input input-bordered flex items-center gap-2 mt-4">
                                     <input type="text" class="grow" placeholder="Search" id="coupan-input"/>
-                                    <button class="btn btn-primary w-[40%] ml-9" id="offer-button" disabled>Apply</button>
+                                    <button class="btn btn-primary w-[40%] ml-9 bg-[#1DD100] text-white" id="offer-button" disabled>Apply</button>
                                 </label>
                             </div>
                             <hr class="border-dashed border-2 mt-2">
@@ -462,9 +463,6 @@
                             </div>
 
 
-
-
-
                         </div>
 
                     </div>
@@ -476,14 +474,14 @@
                               <span class="label-text font-semibold">Passenger Name*</span>
 
                             </div>
-                            <input type="text" placeholder="Type here" class="input input-bordered w-full" />
+                            <input type="text" placeholder="Type here" class="input input-bordered w-full" id="user-name" />
                         </label>
                         <label class="form-control w-full">
                             <div class="label">
                               <span class="label-text font-semibold">Phone Number*</span>
 
                             </div>
-                            <input type="text" placeholder="Type here" class="input input-bordered w-full" id="user-name"/>
+                            <input type="text" placeholder="Type here" class="input input-bordered w-full" id="phone-number"/>
                         </label>
                         <label class="form-control w-full">
                             <div class="label">
@@ -493,27 +491,62 @@
                             <input type="text" placeholder="Type here" class="input input-bordered w-full" id="email-id"/>
                         </label>
 <!-- its the button here to send -->
-                        <button class="btn btn-primary w-full bg-green-600 text-white font-semibold mt-4" id="next-button">Next</button>
+                        <button class="btn btn-primary w-full bg-[#1DD100] text-white font-semibold mt-4 border-0" id="next-button">Next</button>
 
                     </div>
                 </div>
             </div>
+            </section>
+        </section>
+
+        <section class="flex justify-center hidden" id="after">
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="images/success.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title text-[#27AE60] uppercase">SUccess</h2>
+                  <p class="font-semibold">Thank you <span id="name"></span><br>for Booking Our Bus Seats. 
+                    We are working hard to find the best service and deals for you.</p>
+                    <p class="text-sm text-center">Shortly you will find a confirmation in your email.</p>
+                  <div class="card-actions">
+                    <button class="btn btn-primary bg-[#27AE60] text-white border-0" id="continue">Continue</button>
+                  </div>
+                </div>
+              </div>
         </section>
 
     </main>
-    <footer class="footer p-10 bg-base-300 text-base-content mt-6 bg-[#3D3B40] text-whtie flex justify-between">
-        <nav>
-          <h3 class="footer-title text-white text-4xl">Safi Paribahan</h3> 
-          <p class="text-white text-wrap">P-Ticket is a digital platform to make your daily <br>commuting better.</p>
-        </nav> 
-        <nav>
-          <h6 class="footer-title text-lg text-white">Download our app</h6> 
-          <div class="grid grid-flow-col gap-4">
-            <img src="images/Group 104.png" alt="">
-          </div>
-        </nav>
-        <hr class="border-2 border-white">
+
+
+
+
+    <footer class="p-10  text-base-content mt-6 bg-[#3D3B40] w-full">
+        <div class="flex justify-between w-full">
+            <div class="p-6 ">
+                <h3 class="text-3xl text-white font-raleway uppercase">safi paribahan</h3>
+                <p class="text-white">P-Ticket is a digital platform to make your daily <br>commuting better.</p>
+            </div>
+            <div class="p-6">
+                <h3 class="text-white text-lg font-raleway">Download our app</h3>
+                <img src="images/Group 104.png" alt="">
+            </div>
+        </div>
+        <hr class="border-1 border-dashed">
+        <div class="flex justify-between w-full mt-4">
+            <div>
+                <h3 class="text-white text-sm">@all rights reserved, P-Ticket services limited.2024</h3>
+            </div>
+            <div class="">
+                <div class="flex gap-6">
+                    <span class="text-white text-sm">Terms & condition</span>
+                    <span class="text-white text-sm">Return & refund policy</span>
+                    <span class="text-white text-sm">Privacy policy</span>
+                </div>
+            </div>
+        </div>
     </footer>
+    
     <script src="dom.js"></script>
     
 </body>

@@ -123,9 +123,25 @@ coupanbutton.addEventListener('click', function(){
 
 const nextbutton = document.getElementById('next-button')
 nextbutton.addEventListener('click', function(){
-    const email = document.getElementById('email-id')
+    const phonenumber = document.getElementById('phone-number')
     const username = document.getElementById('user-name')
-    console.log(username)
+    const array = phonenumber.value.toString().split("")
+    if(array.length === 11 && ticketsbooked.length > 0){
+        const main = document.getElementById('main-section')
+        const name = document.getElementById('name')
+        name.innerText = username.value
+        main.classList.add('hidden')
+        document.getElementById('after').classList.remove('hidden')
+    }else{
+        alert("you have to do purchase minimum 1 ticket and provide valid phone number")
+    }
+})
+const continues = document.getElementById('continue')
+continues.addEventListener('click', function(){
+    const main = document.getElementById('main-section')
+    main.classList.remove('hidden')
+    document.getElementById('after').classList.add('hidden')
+
 
 
 })
