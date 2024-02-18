@@ -66,7 +66,7 @@
                 </div>
                 <div class="text-white w-[70%] h-[20%] bg-transparent mx-auto text-center">
                     <p class="text-center my-auto"> Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined </p>
-                    <button class="bg-[#1DD100] btn btn-primary text-black mt-4 font-extrabold"><a href="#buy-tickets">Buy Tickets</a></button>
+                    <a href="#buy-tickets"><button class="bg-[#1DD100] btn btn-primary text-black mt-4 font-extrabold">Buy Tickets</button></a>
                 </div>
                 <!-- <div class="w-[100%] h-[90vh] flex gap-3 absolute top-[500px] mx-auto">
                     <div class="w-[20%] bg-white h-[full] rounded-xl flex justify-center items-center gap-10 shadow-xl border-4 border-solid border-b-green-500">
@@ -195,7 +195,7 @@
 
 <!-- heres the available  seats , you have to change the bg to green when the seat is occupied-->
 
-            <div class="w-[80%] h-[100vh] bg-[#fff] rounded-2xl mx-auto flex mt-[5%] gap-4">
+            <div class="w-[80%] h-[120vh] bg-[#fff] rounded-2xl mx-auto flex mt-[5%] gap-4">
                 <div class="h-full bg-white w-[60%] border-r-2 border-dashed">
 
                     <div class="w-[98%] h-full bg-white mx-auto">
@@ -427,7 +427,7 @@
                             <!-- heres to add the tickets name and also the prize -->
                             <div class="tickets">
                                 <div class="flex justify-between">
-                                    <span class="flex text-black mr-">Seat <Span class="bg-green-500 text-white inline-block w-[20px] justify-center items-center rounded-xl flex" id="totalseat">0</Span></span>
+                                    <span class="flex text-black mr-">Seat <Span class="bg-green-500 text-white w-[20px] justify-center items-center rounded-xl flex" id="totalseat">0</Span></span>
                                     <span class="font-semibold text-black">Class</span>
                                     <span class="font-semibold text-black">Price</span>
                                 </div>
@@ -483,17 +483,17 @@
                               <span class="label-text font-semibold">Phone Number*</span>
 
                             </div>
-                            <input type="text" placeholder="Type here" class="input input-bordered w-full" />
+                            <input type="text" placeholder="Type here" class="input input-bordered w-full" id="user-name"/>
                         </label>
                         <label class="form-control w-full">
                             <div class="label">
                               <span class="label-text font-semibold">Email ID</span>
 
                             </div>
-                            <input type="text" placeholder="Type here" class="input input-bordered w-full" />
+                            <input type="text" placeholder="Type here" class="input input-bordered w-full" id="email-id"/>
                         </label>
 <!-- its the button here to send -->
-                        <button class="btn btn-primary w-full bg-green-600 text-white font-semibold mt-4">Next</button>
+                        <button class="btn btn-primary w-full bg-green-600 text-white font-semibold mt-4" id="next-button">Next</button>
 
                     </div>
                 </div>
@@ -501,6 +501,19 @@
         </section>
 
     </main>
+    <footer class="footer p-10 bg-base-300 text-base-content mt-6 bg-[#3D3B40] text-whtie flex justify-between">
+        <nav>
+          <h3 class="footer-title text-white text-4xl">Safi Paribahan</h3> 
+          <p class="text-white text-wrap">P-Ticket is a digital platform to make your daily <br>commuting better.</p>
+        </nav> 
+        <nav>
+          <h6 class="footer-title text-lg text-white">Download our app</h6> 
+          <div class="grid grid-flow-col gap-4">
+            <img src="images/Group 104.png" alt="">
+          </div>
+        </nav>
+        <hr class="border-2 border-white">
+    </footer>
     <script src="dom.js"></script>
     
 </body>

@@ -118,3 +118,14 @@ coupanbutton.addEventListener('click', function(){
     }
 
 })
+
+/* next button work */
+
+const nextbutton = document.getElementById('next-button')
+nextbutton.addEventListener('click', function(){
+    const email = document.getElementById('email-id')
+    const username = document.getElementById('user-name')
+    console.log(username)
+
+
+})
