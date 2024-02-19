@@ -133,7 +133,7 @@ nextbutton.addEventListener('click', function(){
         main.classList.add('hidden')
         document.getElementById('after').classList.remove('hidden')
     }else{
-        alert("you have to do purchase minimum 1 ticket and provide valid phonenumber of 11 character")
+        alert("you have to purchase minimum 1 ticket and provide valid phonenumber of 11 character")
     }
 })
 const continues = document.getElementById('continue')
