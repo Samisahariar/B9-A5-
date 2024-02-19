@@ -126,16 +126,18 @@ nextbutton.addEventListener('click', function(){
     const phonenumber = document.getElementById('phone-number')
     const username = document.getElementById('user-name')
     const array = phonenumber.value.toString().split("")
-    if(array.length === 11 && ticketsbooked.length > 0){
+    if(array.length >= 1 && ticketsbooked.length > 0){
         const main = document.getElementById('main-section')
         const name = document.getElementById('name')
         name.innerText = username.value.toUpperCase()
         main.classList.add('hidden')
         document.getElementById('after').classList.remove('hidden')
     }else{
-        alert("you have to purchase minimum 1 ticket and provide valid phonenumber of 11 character")
+        alert("you have to purchase minimum 1 ticket and provide valid phonenumber of 1 character")
     }
 })
+
+
 const continues = document.getElementById('continue')
 continues.addEventListener('click', function(){
     const main = document.getElementById('main-section')
@@ -143,3 +145,6 @@ continues.addEventListener('click', function(){
     document.getElementById('after').classList.add('hidden')
     document.location.reload()
 })
+ const phonenumber = document.addEventListener('click' , function(){
+    console.log("sami")
+ })
