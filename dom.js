@@ -18,7 +18,7 @@ for (let index = 0; index < seats.length; index++) {
                     showingthebookedseatnumber(ticketsbooked)
 
                 }else{
-                    alert("You cannt buy not more than 4 tickets")
+                    alert("You cannt buy more than 4 tickets")
                 }
 
             }else{
@@ -85,7 +85,7 @@ function showingthebookedseatnumber(ticketsbooked){
         coupanbutton.setAttribute('disabled', '')
     }
     calculatingtotal(ticketsbooked.length)
-    showingtheleftseat(40 - ticketsbooked.length)
+    showingtheleftseat(36 - ticketsbooked.length)
 }
 function showingthebookednumber(ticketsbooked){
     const numberstoshow = document.querySelector('#totalseat')
