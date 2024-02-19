@@ -145,6 +145,10 @@ continues.addEventListener('click', function(){
     document.getElementById('after').classList.add('hidden')
     document.location.reload()
 })
- const phonenumber = document.addEventListener('click' , function(){
-    console.log("sami")
+ const phonenumber = document.getElementById('phone-number')
+ phonenumber.addEventListener('click', function(){
+    const nextbutton = document.getElementById('next-button')
+    if(ticketsbooked.length >= 1 ){
+        nextbutton.removeAttribute('disabled')
+    }
  })
