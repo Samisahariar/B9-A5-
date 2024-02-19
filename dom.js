@@ -141,7 +141,5 @@ continues.addEventListener('click', function(){
     const main = document.getElementById('main-section')
     main.classList.remove('hidden')
     document.getElementById('after').classList.add('hidden')
-
-
-
+    document.location.reload()
 })

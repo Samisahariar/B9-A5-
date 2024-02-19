@@ -130,7 +130,7 @@
             </div>
         </section>
         <div class="w-full text-center mt-[5%]">
-            <button class="btn bg-[#1DD100] border-0 text-white btn-primary">See all offers</button>
+            <button class="btn bg-white border-2 text-[#1DD100] btn-primary border-[#1DD100] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100]" >See all offers</button>
         </div>
         <section class="w-full border-t-2 border-t-green-400 rounded-[100px] mt-[10%] bg-[#F7F8F8]" id="buy-tickets">
             <div>
@@ -473,10 +473,10 @@
                                 <h3>BDT <span id="total-price"></span></h3>
                             </div>
                             <div class="sami" id="inpu-section">
-                                <label class="input input-bordered flex items-center gap-2 mt-4">
-                                    <input type="text" class="grow" placeholder="Search" id="coupan-input"/>
-                                    <button class="btn btn-primary w-[40%] ml-9 bg-[#1DD100] text-white" id="offer-button" disabled>Apply</button>
-                                </label>
+                                <div class="join w-full">
+                                    <input type="text" placeholder="Have any coupan Number?" class="input input-bordered join-item w-full border-0 focus:border-0 focus:outline-none" id="coupan-input"/> 
+                                    <button class="btn btn-primary join-item bg-[#1DD100] border-0 text-white" id="offer-button" disabled>Apply</button>
+                                  </div>
                             </div>
                             <hr class="border-dashed border-2 mt-2">
                             <div class="flex justify-between">
