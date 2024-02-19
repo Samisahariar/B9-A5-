@@ -93,14 +93,21 @@ function showingthebookednumber(ticketsbooked){
 }
 
 function calculatingtotal(number){
+    const grandtotalelement = document.querySelector('#grand-total')
     const total = document.querySelector('#total-price')
     total.innerText = number * 550
+    grandtotalelement.innerText = number * 550
 }
 function showingtheleftseat(value){
     const leftseats = document.querySelector('#left-seats')
     leftseats.innerText = value
 }
+
+
 /* coupan-sention */
+
+
+
 const coupanbutton = document.querySelector('#offer-button')
 coupanbutton.addEventListener('click', function(){
     const grandtotalelement = document.querySelector('#grand-total')
@@ -109,12 +116,16 @@ coupanbutton.addEventListener('click', function(){
         const total = parseInt(document.querySelector('#total-price').innerText)
         let grandtotal = total - (total * 0.2)
         grandtotalelement.innerText = grandtotal
-        document.querySelector('#inpu-section').classList.add('hidden')
+        document.getElementById('discount-price').innerText = total * 0.2
+        document.querySelector('#input-setion').classList.add('hidden')
+        document.getElementById('discountcontain').classList.remove('hidden')
     }else if( coupanvalue === "COUPLE20"){
         const total = parseInt(document.querySelector('#total-price').innerText)
         let grandtotal = total - (total * 0.15)
         grandtotalelement.innerText = grandtotal
-        document.querySelector('#inpu-section').classList.add('hidden')
+        document.getElementById('discount-price').innerText = total * 0.15
+        document.querySelector('#input-setion').classList.add('hidden')
+        document.getElementById('discountcontain').classList.remove('hidden')
     }
 
 })
@@ -133,7 +144,7 @@ nextbutton.addEventListener('click', function(){
         main.classList.add('hidden')
         document.getElementById('after').classList.remove('hidden')
     }else{
-        alert("you have to purchase minimum 1 ticket and provide valid phonenumber of 1 character")
+        alert("you have to purchase minimum 1 ticket and provide valid phonenumber of 1 character or more")
     }
 })
 
@@ -152,3 +163,7 @@ continues.addEventListener('click', function(){
         nextbutton.removeAttribute('disabled')
     }
  })
+ function addiscountprice(){
+    
+
+ }
