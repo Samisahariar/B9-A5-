@@ -126,6 +126,8 @@ coupanbutton.addEventListener('click', function(){
         document.getElementById('discount-price').innerText = total * 0.15
         document.querySelector('#input-setion').classList.add('hidden')
         document.getElementById('discountcontain').classList.remove('hidden')
+    }else{
+        alert("invalid coupan code")
     }
 
 })
